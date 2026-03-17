@@ -68,8 +68,9 @@ Add the `generalRisk` server entry:
     "generalRisk": {
       "command": "node",
       "args": [
-        "<path-to-your-clone>\\ACTUS-DeFi-Treasury-Intelligence-ADTI-\\ADTI-interface\\Backend\\dist\\mcp-server.js"
+        "<path-to-your-clone>/ACTUS-DeFi-Treasury-Intelligence-ADTI-/ADTI-interface/Backend/dist/mcp-server.js"
       ]
+      "cwd" : "<path-to-your-clone>/ACTUS-DeFi-Treasury-Intelligence-ADTI-/ADTI-interface/Backend"
     }
   }
 }
@@ -80,11 +81,11 @@ Replace `<path-to-your-clone>` with your actual clone location. For example:
 
 ### Step 4 — Restart Claude Desktop
 
-Close and reopen Claude Desktop. The `ACTUS-DeFi-Treasury-Intelligence-ADTI-` MCP server will start automatically.
+Close and reopen Claude Desktop. The `generalRisk` MCP server will start automatically.
 
 ### Step 5 — Verify the Tools Are Available
 
-In Claude Desktop, look for the MCP tools icon (hammer/wrench). You should see the server named **`ACTUS-DeFi-Treasury-Intelligence-ADTI-`** with **7 tools**:
+In Claude Desktop, look for the MCP tools icon (hammer/wrench). You should see the server named **`generalRisk`** with **7 tools**:
 
 | Tool | Purpose |
 |---|---|
@@ -126,7 +127,7 @@ If Docker is not running, the MCP server automatically falls back to the AWS-hos
 
 >## OPTION A: 
 to get response from local host use these json files: 
-"<path-to-your-clone>\ACTUS-DeFi-Treasury-Intelligence-ADTI-\ADTI-interface\Frontend\DEMO-ADTI\local\hybrid-treasury\hybrid-treasury-demo
+
 
 ## OPTION B:
 if localhost doesnot work, check your hosted files in system 32 and also try 127.0.0.1
