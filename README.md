@@ -31,11 +31,13 @@ When connected to Claude via the `generalRisk` MCP server, you upload a Postman 
 
 ```bash
 git clone <https://github.com/anusha1311anusha1311/ACTUS-DeFi-Treasury-Intelligence-ADTI-.git>
-cd ADTI-actus-external-risk
+cd ACTUS-DeFi-Treasury-Intelligence-ADTI-
 ```
+
 ### step 2 - Docker running
 
 ```powershell
+cd ADTI-actus-external-risk
 .\start-risk-actusservice-local.bat
 ```
 
@@ -120,6 +122,15 @@ curl http://localhost:8083/
 If Docker is not running, the MCP server automatically falls back to the AWS-hosted engine at `34.203.247.32:8082` / `34.203.247.32:8083`.
 
 ---
+
+
+>## OPTION A: 
+to get response from local host use these json files: 
+"<path-to-your-clone>\ACTUS-DeFi-Treasury-Intelligence-ADTI-\ADTI-interface\Frontend\DEMO-ADTI\local\hybrid-treasury\hybrid-treasury-demo
+
+## OPTION B:
+if localhost doesnot work, check your hosted files in system 32 and also try 127.0.0.1
+"<path-to-your-clone>\ACTUS-DeFi-Treasury-Intelligence-ADTI-\ADTI-interface\Frontend\DEMO-ADTI\hosted\hybrid-treasury\hybrid-treasury-1"
 
 ## Demo Prompts
 
