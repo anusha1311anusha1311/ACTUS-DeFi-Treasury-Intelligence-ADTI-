@@ -10,7 +10,6 @@ This project simulates a complete corporate treasury portfolio where digital ass
 
 When connected to Claude via the `generalRisk` MCP server, you upload a Postman collection JSON, ask a question, and receive real simulation results as interactive visualizations — all from actual ACTUS contract event computations, not mocked data.
 
-This project was built as part of an open-source initiative to bridge traditional financial risk modeling with decentralized finance using the ACTUS standard.
 
 ```
 ┌──────────────┐     ┌──────────────────┐     ┌──────────────────────────┐
@@ -53,7 +52,7 @@ npm run build
 
 This compiles `src/mcp-server.ts` → `dist/mcp-server.js` using TypeScript (`tsc`).
 
-### Step 3 — Add the MCP Server to Claude Desktop
+### Step 4 — Add the MCP Server to Claude Desktop
 
 Open your Claude Desktop config file:
 
@@ -81,11 +80,11 @@ Add the `generalRisk` server entry:
 Replace `<path-to-your-clone>` with your actual clone location. For example:
 
 
-### Step 4 — Restart Claude Desktop
+### Step 5 — Restart Claude Desktop
 
 Close and reopen Claude Desktop. The `generalRisk` MCP server will start automatically.
 
-### Step 5 — Verify the Tools Are Available
+### Step 6 — Verify the Tools Are Available
 
 In Claude Desktop, look for the MCP tools icon (hammer/wrench). You should see the server named **`generalRisk`** with **7 tools**:
 
@@ -127,13 +126,15 @@ If Docker is not running, the MCP server automatically falls back to the AWS-hos
 ---
 
 
->## OPTION A: 
+>### OPTION A: 
 to get response from local host use these json files: 
+[HT-CONS-CLM-AG-7.json](https://github.com/anusha1311anusha1311/ACTUS-DeFi-Treasury-Intelligence-ADTI-/blob/main/ADTI-interface/Frontend/DEMO-ADTI/local/hybrid-treasury/hybrid-treasury-demo/HT-CONS-CLM-AG-7.json)
 
-
-## OPTION B:
+### OPTION B:
 if localhost doesnot work, check your hosted files in system 32 and also try 127.0.0.1
-"<path-to-your-clone>\ACTUS-DeFi-Treasury-Intelligence-ADTI-\ADTI-interface\Frontend\DEMO-ADTI\hosted\hybrid-treasury\hybrid-treasury-1"
+
+[HT-CONS-CLM-MD-3.json](https://github.com/anusha1311anusha1311/ACTUS-DeFi-Treasury-Intelligence-ADTI-/blob/main/ADTI-interface/Frontend/DEMO-ADTI/hosted/hybrid-treasury/hybrid-treasury-4/HT-CONS-CLM-MD-3.json)
+
 
 ## Demo Prompts
 
@@ -144,13 +145,15 @@ Upload a Hybrid Treasury collection JSON to Claude, then run these prompts:
 Run the hybrid treasury consolidation simulation. Show me the full portfolio 
 breakdown: BTC position value, ETH position value, T-Bill maturities, AR/AP 
 settlements, USDC yield, and consolidated cash balance over the 6-month horizon.
+give me suitable charts,graphs and visualizatios.
 ```
 
 ### Prompt 2 — Allocation Drift Analysis
 ```
 Show me when BTC and ETH allocation drift triggered rebalancing events. 
 Plot the allocation percentage vs the min/target/max bands (15%/20%/25% for BTC, 
-7%/10%/15% for ETH) and mark each PP event where drift correction occurred.
+7%/10%/15% for ETH) and mark each PP event where drift correction occurred.give me suitable charts,graphs and visualizatios.
+
 ```
 
 ### Prompt 3 — Cash Flow Waterfall
@@ -158,14 +161,16 @@ Plot the allocation percentage vs the min/target/max bands (15%/20%/25% for BTC,
 Create a cash flow waterfall showing all inflows (AR settlements, T-bill 
 maturities, digital asset sell proceeds, USDC yield) and outflows 
 (AP payments, deployments). Track the running cash balance and show where 
-the liquidity buffer model triggers.
+the liquidity buffer model triggers.give me suitable charts,graphs and visualizatios.
+
 ```
 
 ### Prompt 4 — Early Settlement vs. Penalty
 ```
 Compare AR early settlements (discounted) vs AP late payment (penalized). 
 Show me which AR invoices settled early, what discount was applied, and 
-what penalty accrued on the overdue AP-003 invoice.
+what penalty accrued on the overdue AP-003 invoice.give me suitable charts,graphs and visualizatios.
+
 ```
 
 ---
