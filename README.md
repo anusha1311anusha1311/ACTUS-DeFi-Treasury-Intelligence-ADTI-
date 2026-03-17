@@ -221,7 +221,7 @@ Monitors digital asset allocation vs. portfolio total and triggers rebalancing:
 ### EarlySettlementModel
 Models accelerated AR collection or AP payment with discount:
 - `discountFunctionType` — `LINEAR`, `EXPONENTIAL`, or `STEPWISE`
-- `hurdleRateAnnualized` — minimum return threshold for settlement decision
+- `hurdleRateAnnualized` — minimum return threshold for settlement decisioncls
 - `buyerCashMOC` — links to counterparty liquidity reference index
 - Loaded via `POST :8082/addEarlySettlementModel`
 
