@@ -10,6 +10,8 @@ This project simulates a complete corporate treasury portfolio where digital ass
 
 When connected to Claude via the `generalRisk` MCP server, you upload a Postman collection JSON, ask a question, and receive real simulation results as interactive visualizations — all from actual ACTUS contract event computations, not mocked data.
 
+This project was built as part of an open-source initiative to bridge traditional financial risk modeling with decentralized finance using the ACTUS standard.
+
 ```
 ┌──────────────┐     ┌──────────────────┐     ┌──────────────────────────┐
 │  Claude AI   │────▶│  generalRisk     │────▶│    ACTUS Risk Engine     │
